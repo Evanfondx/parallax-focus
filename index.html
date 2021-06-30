@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- My Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- My JS -->
+    <link rel="stylesheet" href="js/script.js" />
+    <!-- Fonts -->
+
+    <title>Focus Parallax</title>
+  </head>
+  <body>
+    <section>
+      <div class="box">
+        <h2>Ini Kamu</h2>
+      </div>
+      <div class="box">
+        <h2>Ini Kamu</h2>
+      </div>
+      <div class="circle"></div>
+    </section>
+    <script>
+      const pos = document.documentElement;
+      pos.addEventListener("mousemove", (e) => {
+        pos.style.setProperty("--x", e.clientX + "px");
+        pos.style.setProperty("--y", e.clientY + "px");
+      });
+    </script>
+  </body>
+</html>
